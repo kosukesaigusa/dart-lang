@@ -210,21 +210,21 @@ class Logger {
     void printMessageFromCache(String key) {
         print(_cache[key]?.message);
     }
-    }
 
     void testLoggerClass() {
-    var logger1 = Logger('UI', 'A message from UI.');
-    var logger2 = Logger('UI', 'Another message from UI');
+        var logger1 = Logger('UI', 'A message from UI.');
+        var logger2 = Logger('UI', 'Another message from UI');
 
-    var logMap = {
-        'name': 'UI',
-        'message': 'Message from UI by fromJson constructor'
-    };
-    var loggerJson = Logger.fromJson(logMap);
+        var logMap = {
+            'name': 'UI',
+            'message': 'Message from UI by fromJson constructor'
+        };
+        var loggerJson = Logger.fromJson(logMap);
 
-    logger1.printMessageFromCache('UI');
-    logger2.printMessageFromCache('UI');
-    loggerJson.printMessageFromCache('UI');
+        logger1.printMessageFromCache('UI');
+        logger2.printMessageFromCache('UI');
+        loggerJson.printMessageFromCache('UI');
+    }
 }
 
 void main() {
