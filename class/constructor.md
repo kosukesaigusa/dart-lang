@@ -1,6 +1,6 @@
 # コンストラクタ
 
-# 参考
+## 参考
 
 - [【公式】Dart language specification](https://dart.dev/guides/language/spec)
 - [【公式】A tour of the Dart language](https://dart.dev/guides/language/language-tour#constructors)
